@@ -82,3 +82,9 @@ Dockerfile
     <missing>      4 days ago       /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   811B
     <missing>      4 days ago       /bin/sh -c #(nop) ADD file:d6b6ba642344138dc…   74.1MB
     $
+
+-f 是指定dockerfile, docker 会自动找dockerfile文件, 如果文件不叫dockerfile, 需要使用-f指定
+docker image build -f dir -t name .
+
+查看image的分层信息
+docker image history imageid

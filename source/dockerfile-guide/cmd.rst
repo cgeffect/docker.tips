@@ -1,5 +1,13 @@
 容器启动命令 CMD
 ==================
+批量清理已经停止的容器
+docker system prune -f
+批量清理已经停止的镜像
+docker image prune -a
+
+没执行一个容器, 就会创建一个新容器, 使用--rm命令, 当容器退出的时候会自动删除
+docker container run --rm -it name
+
 
 CMD可以用来设置容器启动时默认会执行的命令。
 
